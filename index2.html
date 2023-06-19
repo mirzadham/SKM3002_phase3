@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gaussian calculator</title>
+    <link href="style2.css" rel="stylesheet"/>
+</head>
+<body>
+    <section>
+        <div class="wrapper">
+            <nav class="navbar">
+                <img class="logo" src="upmlogo.png">
+                <ul></ul>
+            </nav>
+            <div class="center">
+                <h1>Welcome to Gaussian Calculator</h1>
+            </div>
+            <div id="btnContainer">
+                <button id="toggleButton" class="startBtn">START</button>
+                <div id="targetElement" style="display: none;">
+                    <div class="interface2">
+                        <div class="inverse">
+                            <br><label class="h2">Choose size of matrix</label><br><br>
+                            <!-- Input fields for matrix dimensions -->
+                            <label for="rowsInput" class="text">Number of Rows:</label>
+                            <input type="number" id="rowsInput" class="custom-input1"><br>
+    
+                            <label for="colsInput" class="text" >Number of Columns:</label>
+                            <input type="number" id="colsInput" class="custom-input1">
+    
+                            <!-- Input fields for matrix elements -->
+                            <div id="matrixInput" class="matrixInput">
+                            <!-- Matrix elements will be dynamically added here using JavaScript -->
+                            </div>
+    
+                            <!-- Submit button -->
+                            <button id="submitBtn" class="button">Get inverse</button><br><br>
+    
+                            <div id="result" class="result"></div><br><br>
+                        </div>
+
+                        <div class="solve">
+                            <h1 class="h2">Linear Equation Solver</h1>
+                            <label for="equationCount" class="text">Number of Equations:</label>
+                            <input type="number" id="equationCount" />
+                            <button onclick="generateEquationInputs()">Generate Equation Inputs</button>
+                    
+                            <div id="equationInputs"></div>
+                    
+                            <button onclick="solveEquations()">Solve Equations</button>
+                    
+                            <div id="result"></div>
+                        </div>
+                    </div>   
+                
+                </div>
+
+                <button id="toggleButton2" class="videoBtn">VIDEO</button>
+                <div id="targetElement2" style="display: none;">
+                    <div class="interface3">
+                        <br><br><label class="h2">Tutorial of how to perform Gaussian Elimination</label><br><br>
+                        <video width="400" class="video" controls>
+                            <source src="Gaussian Elimination.mp4" type="video/mp4">
+                        </video>
+                        <p class="text2">
+                            <a href="https://youtu.be/eDb6iugi6Uk" target="_blank">click here</a>to go to source
+                        </p><br><br>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </section>   
+    <script src="program2.js"></script>
+</body>
+</html>
